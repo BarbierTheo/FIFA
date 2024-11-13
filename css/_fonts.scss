@@ -1,14 +1,17 @@
 @font-face {
     font-family: 'Marta';
-    src: url(../fonts/Marta_Regular.otf);
+    src: url(../fonts/marta_regular-webfont.woff) format('woff');
+    src: url(../fonts/marta_regular-webfont.woff2) format('woff2');
 }
 
 @font-face {
-    font-family: 'Cruyff Regular';
-    src: url(../fonts/CruyffSans-Regular.ttf);
+    font-family: "Cruyff Regular";
+    src: url(../fonts/cruyffsans-regular-webfont.woff) format('woff');
+    src: url(../fonts/cruyffsans-regular-webfont.woff2) format('woff2');
 }
 
 @font-face {
-    font-family: 'Cruyff Bold';
-    src: url(../fonts/CruyffSansExpanded-Heavy.ttf);
+    font-family: "Cruyff Bold";
+    src: url(../fonts/cruyffsansexpanded-heavy-webfont.woff) format('woff');
+    src: url(../fonts/cruyffsansexpanded-heavy-webfont.woff2) format('woff2');
 }
