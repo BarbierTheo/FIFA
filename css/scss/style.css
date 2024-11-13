@@ -65,9 +65,9 @@ header .dropdown1:hover .content1 {
 .innercarousel {
   display: flex;
   flex-direction: column;
-  position: relative;
+  position: absolute;
   gap: 2rem;
-  bottom: 30rem;
+  bottom: 3rem;
   margin: 3rem;
 }
 .innercarousel h1 {
@@ -149,7 +149,7 @@ header .dropdown1:hover .content1 {
 .container-latest-news {
   display: flex;
   flex-direction: column;
-  margin-top: -20rem;
+  margin-top: 0rem;
 }
 .container-latest-news .head-latest {
   display: flex;

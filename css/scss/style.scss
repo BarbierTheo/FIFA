@@ -80,9 +80,9 @@ header {
 .innercarousel {
     display: flex;
     flex-direction: column;
-    position: relative;
+    position: absolute;
     gap: 2rem;
-    bottom: 30rem;
+    bottom: 3rem;
     margin: 3rem;
 
     h1 {
@@ -178,7 +178,7 @@ header {
 .container-latest-news {
     display: flex;
     flex-direction: column;
-    margin-top: -20rem;
+    margin-top: 0rem;
 
     .head-latest {
         display: flex;
