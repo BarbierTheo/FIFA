@@ -34,7 +34,7 @@ header button {
 header nav {
   display: flex;
   background-color: transparent;
-  margin: 0 1rem;
+  margin: 0 3rem;
   padding: 0.2rem;
   gap: 2.3rem;
   align-items: center;
@@ -55,7 +55,7 @@ header .dropdown1:hover .content1 {
 
 .container-carousel img {
   width: 100%;
-  height: 100%;
+  height: 50rem;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center;
@@ -65,12 +65,18 @@ header .dropdown1:hover .content1 {
 .innercarousel {
   display: flex;
   flex-direction: column;
+  position: relative;
+  gap: 2rem;
+  bottom: 30rem;
+  margin: 3rem;
 }
 .innercarousel h1 {
   font-size: 4rem;
+  color: white;
 }
 .innercarousel h2 {
   font-size: 1.5rem;
+  color: white;
 }
 .innercarousel a {
   text-decoration: none;
@@ -81,4 +87,83 @@ header .dropdown1:hover .content1 {
   text-align: center;
   border-radius: 3rem;
   font-size: 1.2rem;
+}
+
+.container-carousel-right {
+  background: rgba(92, 92, 92, 0.14);
+  box-shadow: 0 0.2rem 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(0.5rem);
+  -webkit-backdrop-filter: blur(0.5rem);
+  border: 0.1rem solid rgba(92, 92, 92, 0.4);
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  max-width: 30%;
+  color: white;
+  position: absolute;
+  bottom: 10rem;
+  left: 60rem;
+}
+.container-carousel-right .news {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+.container-carousel-right .news img {
+  width: 15rem;
+  height: 8rem;
+}
+.container-carousel-right .news .photonews {
+  display: flex;
+  flex-direction: column;
+}
+.container-carousel-right .news .photonews .docktoimg {
+  position: relative;
+  bottom: 3rem;
+  color: white;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.7);
+  max-width: 20%;
+}
+.container-carousel-right .news .textnews {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 1rem;
+}
+.container-carousel-right .news button {
+  text-align: left;
+}
+
+.container-latest-news {
+  display: flex;
+  flex-direction: column;
+  margin-top: -20rem;
+}
+.container-latest-news .head-latest {
+  display: flex;
+  justify-content: center;
+  gap: 70%;
+  margin: 1rem;
+}
+.container-latest-news .head-latest .title {
+  font-size: 3rem;
+}
+.container-latest-news .news-body {
+  display: flex;
+}
+.container-latest-news .news-body .pic-news {
+  width: 45%;
+  margin: 0.5rem 0;
+}
+.container-latest-news .news-body .textblock {
+  margin: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  width: 30%;
+  gap: 1rem;
+}
+.container-latest-news .news-body .textblock .titlenews {
+  font-size: 2rem;
 }/*# sourceMappingURL=style.css.map */
