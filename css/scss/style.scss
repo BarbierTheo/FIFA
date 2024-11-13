@@ -150,18 +150,28 @@ header {
             flex-direction: column;
             gap: 1rem;
             margin: 1rem;
-
+            .seemore{
+                border: none;
+                background-color: transparent;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 1rem;
+                color: white;
+                
+                    i{
+                        margin-left: 0.5rem;
+                        padding: 0.4rem;
+                        color: black;
+                        background-color: #05f269;
+                        border-radius: 100%;
+                    }
+            }
         }
 
-        button {
-
-            text-align: left;
-        }
     }
 
     position: absolute;
-    bottom: 10rem;
-    left: 60rem;
+    bottom: 0rem;
+    margin-left: 55rem;
 
 }
 
@@ -179,8 +189,6 @@ header {
         .title {
             font-size: 3rem;
         }
-
-        .seemore {}
     }
 
     .news-body {
@@ -213,4 +221,19 @@ header {
             }
         }
     }
+}
+
+
+.seemore{
+    border: none;
+    background-color: transparent;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    
+        i{
+            margin-left: 0.5rem;
+            padding: 0.4rem;
+            background-color: #05f269;
+            border-radius: 100%;
+        }
 }
