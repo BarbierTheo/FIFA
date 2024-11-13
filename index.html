@@ -5,18 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/scss/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js"
+        integrity="sha512-ykZ1QQr0Jy/4ZkvKuqWn4iF3lqPZyij9iRv6sGqLRdTPkY69YX6+7wvVGmsdBbiIfN/8OdsI7HABjvEok6ZopQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <title>EAFC24 - Professionel</title>
 </head>
 
 <body>
     <header>
         <div class="topbar">
-            <a href="#" #profile></a>
-            <a href="#" #faq></a>
-            <a href="#" #ea></a>
+            <a href="#" #profile><i class="fa-regular fa-user"></i></a>
+            <a href="#" #faq><i class="fa-solid fa-question"></i></a>
+            <a href="#" #ea><img src="/img/logo-ea.svg" alt="logo-ea">
+            </a>
         </div>
         <nav>
-            <a href="#"><img src="./img/FC logo.webp" alt="logo_FC_pro"></a>
+            <a href="#"><img src="./img/FC-logo.webp" alt="logo_FC_pro"></a>
             <div class="dropdown1">
                 <button>Competitions</button>
                 <div class="content1">
@@ -29,9 +36,9 @@
             <a href="#">Draft</a>
             <a href="#">Register</a>
             <a href="#">News</a>
-            <div class="dropdown2">
+            <div class="dropdown1">
                 <button>About</button>
-                <div class="content2">
+                <div class="content1">
                     <a href="#">EA SPORTS FC PRO 25 Official Rules</a>
                     <a href="#">Community Guidelines</a>
                     <a href="#">FC Pro League Partners</a>
@@ -43,6 +50,16 @@
     </header>
 
     <main>
+
+        <div class="container-carousel">
+            <img src="./img/slide/slide1.svg" alt="commentateurs_esports">
+            <div class="innercarousel">
+                <h1>World Rankings</h1>
+                <h2>Everything you need to know about the FC Pro World Rankings</h2>
+                <a href="#">Learn More</a>
+            </div>
+        </div>
+
         <!-- Carousel -->
         <div class="container-carousel-right">
             <div class="news">
@@ -102,7 +119,9 @@
         <div class="container-cup">
             <div class="text-cup">
                 <p class="title-cup">FC Pro 25</p>
-                <p class="text-cup">FC Pro is a definitive, streamlined esports program that focuses on 1v1 competition, showcasing the talents of the world’s greatest players as they battle their way to the FC Pro World Championships.</p>
+                <p class="text-cup">FC Pro is a definitive, streamlined esports program that focuses on 1v1 competition,
+                    showcasing the talents of the world’s greatest players as they battle their way to the FC Pro World
+                    Championships.</p>
             </div>
             <img src="./img/cup2.webp" alt="Coupe_FC_PRO_25">
         </div>

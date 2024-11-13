@@ -1,1 +1,84 @@
-/*# sourceMappingURL=style.css.map */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+header {
+  background-color: #151616;
+}
+header .topbar {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  align-items: center;
+  margin: 0.5rem 3rem;
+}
+header .topbar i {
+  width: 3rem;
+  width: 3rem;
+}
+header .topbar img {
+  width: 2.5rem;
+  width: 2.5rem;
+  filter: invert(100%);
+}
+header a,
+header button {
+  color: white;
+  text-decoration: none;
+  border: none;
+  background-color: transparent;
+  font-size: 1.2rem;
+}
+header nav {
+  display: flex;
+  background-color: transparent;
+  margin: 0 1rem;
+  padding: 0.2rem;
+  gap: 2.3rem;
+  align-items: center;
+}
+header .dropdown1 {
+  position: relative;
+}
+header .dropdown1 .content1 {
+  display: none;
+  background-color: #151616;
+}
+header .dropdown1:hover .content1 {
+  display: block;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+}
+
+.container-carousel img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.innercarousel {
+  display: flex;
+  flex-direction: column;
+}
+.innercarousel h1 {
+  font-size: 4rem;
+}
+.innercarousel h2 {
+  font-size: 1.5rem;
+}
+.innercarousel a {
+  text-decoration: none;
+  color: black;
+  background-color: #05f269;
+  padding: 1.5rem;
+  max-width: 8%;
+  text-align: center;
+  border-radius: 3rem;
+  font-size: 1.2rem;
+}/*# sourceMappingURL=style.css.map */
