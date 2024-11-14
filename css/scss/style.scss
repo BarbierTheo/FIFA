@@ -1,18 +1,18 @@
 @font-face {
     font-family: 'Marta';
-    src: url(/fonts/otf/Marta_Regular.otf) format('truetype');
+    src: url(../../fonts/otf/Marta_Regular.otf) format('truetype');
     font-weight: normal;
 }
 
 @font-face {
     font-family: 'Cruyff';
-    src: url(/fonts/otf/CruyffSans-Regular.ttf) format('truetype');
+    src: url(../../fonts/otf/CruyffSans-Regular.ttf) format('truetype');
     font-weight: normal;
 }
 
 @font-face {
     font-family: 'Cruyff';
-    src: url(/fonts/otf/CruyffSansExpanded-Heavy.ttf) format('truetype');
+    src: url(../../fonts/otf/CruyffSansExpanded-Heavy.ttf) format('truetype');
     font-weight: bold;
 }
 
@@ -85,7 +85,13 @@ header {
             background-color: #151616;
         }
 
+        .button:hover{
+    
+            color: #05f269;
+        }
+
     }
+
 
     .dropdown1:hover .content1 {
         display: flex;
@@ -100,8 +106,7 @@ header {
     }
 
     .hover1:hover {
-            background-color: #05f269;
-            color: #151616;
+            color: #05f269;
             transition: ease 0.3s;
 
     }
@@ -115,13 +120,12 @@ header {
 .container-carousel {
     width: 100%;
     height: 90vh;
-    background-image: url(/img/slide/slide1.svg);
+    background-image: url(../img/slide/slide1.svg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     display: flex;
     align-items: center;
-
 }
 
 .innercarousel {
