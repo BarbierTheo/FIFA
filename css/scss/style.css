@@ -1,26 +1,43 @@
+@font-face {
+  font-family: "Marta";
+  src: url(/fonts/otf/Marta_Regular.otf) format("truetype");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Cruyff";
+  src: url(/fonts/otf/CruyffSans-Regular.ttf) format("truetype");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Cruyff";
+  src: url(/fonts/otf/CruyffSansExpanded-Heavy.ttf) format("truetype");
+  font-weight: bold;
+}
 * {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
 }
 
 header {
   background-color: #151616;
+  font-family: "Cruyff";
 }
 header .topbar {
   display: flex;
   justify-content: flex-end;
   gap: 1rem;
   align-items: center;
-  margin: 0.5rem 3rem;
+  margin: 0 3rem;
+  height: 3rem;
 }
 header .topbar i {
   width: 3rem;
   width: 3rem;
+  color: gray;
 }
 header .topbar img {
-  width: 2.5rem;
-  width: 2.5rem;
+  width: 2rem;
+  width: 2rem;
   filter: invert(100%);
 }
 header a,
@@ -33,8 +50,8 @@ header button {
 }
 header nav {
   display: flex;
-  background-color: transparent;
   margin: 0 3rem;
+  width: 100%;
   padding: 0.2rem;
   gap: 2.3rem;
   align-items: center;
@@ -53,40 +70,47 @@ header .dropdown1:hover .content1 {
   position: absolute;
 }
 
-.container-carousel img {
+.container-carousel {
   width: 100%;
-  height: 50rem;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
+  height: 90vh;
+  background-image: url(/img/slide/slide1.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
 }
 
 .innercarousel {
   display: flex;
   flex-direction: column;
-  position: absolute;
-  gap: 2rem;
-  bottom: 3rem;
+  gap: 1rem;
   margin: 3rem;
+  width: 70%;
 }
 .innercarousel h1 {
-  font-size: 4rem;
+  font-size: 6rem;
   color: white;
+  font-family: "Cruyff";
+  font-weight: bold;
+  max-width: 40%;
 }
 .innercarousel h2 {
-  font-size: 1.5rem;
+  margin-top: -0.8rem;
+  font-size: 1.2rem;
   color: white;
+  font-family: "Marta";
 }
 .innercarousel a {
   text-decoration: none;
   color: black;
   background-color: #05f269;
-  padding: 1.5rem;
-  max-width: 8%;
+  padding: 1rem;
+  width: 8rem;
   text-align: center;
   border-radius: 3rem;
   font-size: 1.2rem;
+  font-family: "Cruyff";
 }
 
 .container-carousel-right {
@@ -97,49 +121,60 @@ header .dropdown1:hover .content1 {
   border: 0.1rem solid rgba(92, 92, 92, 0.4);
   display: flex;
   flex-direction: column;
-  padding: 2rem;
-  max-width: 30%;
+  padding: 1rem;
   color: white;
-  position: absolute;
-  bottom: 0rem;
-  margin-left: 55rem;
+  margin: 5rem;
+  max-width: 28rem;
+  height: 55%;
+  justify-content: center;
+  gap: 1em;
+  padding: 2rem;
+  margin-left: 0rem;
 }
 .container-carousel-right .news {
   display: flex;
   justify-content: center;
-  gap: 1rem;
 }
 .container-carousel-right .news img {
-  width: 15rem;
-  height: 8rem;
+  max-width: 85%;
+  height: auto;
 }
 .container-carousel-right .news .photonews {
-  display: flex;
-  flex-direction: column;
+  position: relative;
 }
 .container-carousel-right .news .photonews .docktoimg {
-  position: relative;
-  bottom: 3rem;
+  position: absolute;
   color: white;
   padding: 1rem;
   background-color: rgba(0, 0, 0, 0.7);
   max-width: 20%;
+  top: 60%;
+  left: 5%;
+  text-align: center;
+  font-family: "Cruyff";
+  font-weight: bold;
 }
 .container-carousel-right .news .textnews {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
-  margin: 1rem;
+  justify-content: center;
+  width: 40%;
+  font-family: "Cruyff";
+}
+.container-carousel-right .news .textnews .newstitle {
+  text-align: left;
+  margin-left: -2rem;
 }
 .container-carousel-right .news .textnews .seemore {
+  margin: 1rem;
   border: none;
   background-color: transparent;
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 1rem;
   color: white;
+  font-family: "Cruyff";
 }
 .container-carousel-right .news .textnews .seemore i {
-  margin-left: 0.5rem;
+  margin-left: 0.4rem;
   padding: 0.4rem;
   color: black;
   background-color: #05f269;
@@ -149,16 +184,17 @@ header .dropdown1:hover .content1 {
 .container-latest-news {
   display: flex;
   flex-direction: column;
-  margin-top: 0rem;
+  margin-top: 0.5rem;
 }
 .container-latest-news .head-latest {
   display: flex;
   justify-content: center;
-  gap: 70%;
-  margin: 1rem;
+  gap: 77%;
 }
 .container-latest-news .head-latest .title {
-  font-size: 3rem;
+  font-size: 2rem;
+  font-family: "Cruyff";
+  font-weight: bold;
 }
 .container-latest-news .news-body {
   display: flex;
@@ -172,16 +208,29 @@ header .dropdown1:hover .content1 {
   display: flex;
   flex-direction: column;
   align-self: center;
-  width: 30%;
+  width: 50%;
   gap: 1rem;
 }
-.container-latest-news .news-body .textblock .titlenews {
-  font-size: 2rem;
+.container-latest-news .news-body .textblock .date {
+  font-family: "Marta";
 }
+.container-latest-news .news-body .textblock .titlenews {
+  font-size: 1.8rem;
+  font-family: "Cruyff";
+  font-weight: bold;
+  width: 50%;
+}
+.container-latest-news .news-body .textblock .resume {
+  font-family: "Cruyff";
+  width: 50%;
+  font-size: 1.1rem;
+  color: rgb(92, 92, 92);
+}
+
 .seemore {
   border: none;
   background-color: transparent;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Cruyff";
   font-size: 1rem;
 }
 .seemore i {
