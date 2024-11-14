@@ -23,9 +23,15 @@
     padding: 0;
 }
 
+// ##################################################################################
+//                                     HEADER
+// ##################################################################################
+
 header {
     background-color: #151616;
-    font-family: 'Cruyff';
+    position: sticky;
+    top: 0;
+    z-index: 1;
 
     .topbar {
         display: flex;
@@ -58,6 +64,8 @@ header {
         border: none;
         background-color: transparent;
         font-size: 1.2rem;
+        font-family: 'Cruyff';
+        padding: 0.7rem;
     }
 
     nav {
@@ -80,15 +88,29 @@ header {
     }
 
     .dropdown1:hover .content1 {
-        display: block;
         display: flex;
         flex-direction: column;
         position: absolute;
+        gap: 1rem;
+        padding: 1rem 1rem;
+
+        a {
+            width: 17rem;
+        }
     }
 
+    .hover1:hover {
+            background-color: #05f269;
+            color: #151616;
+            transition: ease 0.3s;
+
+    }
 }
 
 
+// ##################################################################################
+//                                     SLIDE
+// ##################################################################################
 
 .container-carousel {
     width: 100%;
@@ -216,6 +238,11 @@ header {
     }
 
 }
+
+
+// ##################################################################################
+//                                     LATEST NEWS
+// ##################################################################################
 
 .container-latest-news {
     display: flex;

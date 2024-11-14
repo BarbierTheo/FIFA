@@ -20,7 +20,9 @@
 
 header {
   background-color: #151616;
-  font-family: "Cruyff";
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
 header .topbar {
   display: flex;
@@ -47,6 +49,8 @@ header button {
   border: none;
   background-color: transparent;
   font-size: 1.2rem;
+  font-family: "Cruyff";
+  padding: 0.7rem;
 }
 header nav {
   display: flex;
@@ -64,10 +68,19 @@ header .dropdown1 .content1 {
   background-color: #151616;
 }
 header .dropdown1:hover .content1 {
-  display: block;
   display: flex;
   flex-direction: column;
   position: absolute;
+  gap: 1rem;
+  padding: 1rem 1rem;
+}
+header .dropdown1:hover .content1 a {
+  width: 17rem;
+}
+header .hover1:hover {
+  background-color: #05f269;
+  color: #151616;
+  transition: ease 0.3s;
 }
 
 .container-carousel {
