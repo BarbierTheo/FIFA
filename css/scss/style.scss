@@ -44,18 +44,26 @@ header {
 
         i {
             width: 3rem;
-            width: 3rem;
             color: gray;
         }
 
         img {
-            width: 2rem;
-            width: 2rem;
+            width: 1rem;
             -webkit-filter: invert(100%);
             filter: invert(100%);
         }
+
+
     }
 
+    @media (max-width: 1200px) {
+        .topbar {
+            gap: 0rem;
+            margin: 0;
+            justify-content: center;
+            gap: 10%;
+        }
+    }
 
     a,
     button {
@@ -75,6 +83,7 @@ header {
         padding: 0.2rem;
         gap: 2.3rem;
         align-items: center;
+
     }
 
     .dropdown1 {
@@ -85,9 +94,8 @@ header {
             background-color: #151616;
         }
 
-        .button:hover{
-    
-            color: #05f269;
+        i {
+            margin: 0 0.5rem;
         }
 
     }
@@ -98,16 +106,38 @@ header {
         flex-direction: column;
         position: absolute;
         gap: 1rem;
-        padding: 1rem 1rem;
+        padding: 0.5rem 0.5rem;
 
         a {
-            width: 17rem;
+            width: 15rem;
         }
     }
 
     .hover1:hover {
-            color: #05f269;
-            transition: ease 0.3s;
+        color: #05f269;
+        transition: ease 0.3s;
+
+    }
+
+
+    .iconburger {
+        display: none;
+    }
+
+    @media (max-width: 1200px) {
+        .hover1 {
+            display: none;
+        }
+
+        .iconburger {
+            display: inline-block;
+        }
+
+        nav {
+            justify-content: center;
+            margin: 0 0;
+            gap: 0rem;
+        }
 
     }
 }
@@ -126,6 +156,7 @@ header {
     background-repeat: no-repeat;
     display: flex;
     align-items: center;
+    background-color: #151616;
 }
 
 .innercarousel {
@@ -161,6 +192,12 @@ header {
         font-size: 1.2rem;
         font-family: 'Cruyff';
     }
+
+    a:hover {
+        background-color: white;
+        transition: ease 0.2s;
+    }
+
 }
 
 .container-carousel-right {
@@ -178,8 +215,7 @@ header {
     height: 55%;
     justify-content: center;
     gap: 1em;
-    padding: 2rem;
-    margin-left: 0rem;
+    padding: 3rem 1rem;
 
 
     .news {
@@ -214,10 +250,11 @@ header {
             justify-content: center;
             width: 40%;
             font-family: 'Cruyff';
+            margin-left: -2rem;
 
             .newstitle {
                 text-align: left;
-                margin-left: -2rem;
+
             }
 
             .seemore {
@@ -227,19 +264,130 @@ header {
                 font-size: 1rem;
                 color: white;
                 font-family: 'Cruyff';
+                cursor: pointer;
 
 
                 i {
-                    margin-left: 0.4rem;
                     padding: 0.4rem;
                     color: black;
                     background-color: #05f269;
-                    border-radius: 100%;
+                    border-radius: 20%;
                 }
+
             }
+
+            .seemore:hover {
+                color: #05f269;
+            }
+
+
+
         }
 
     }
+
+}
+
+@media (max-width: 1200px) {
+
+
+    .innercarousel {
+        margin: 3rem 0;
+    }
+
+    h1 {
+        width: 100vw;
+    }
+
+    .container-carousel {
+        flex-direction: column;
+    }
+
+    .container-carousel-right {
+        padding: 0 0;
+        max-width: 90%;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;
+        margin: 0;
+        height: 28%;
+        padding: 2rem 1rem;
+        gap: 0rem;
+
+
+        
+        .news {
+            flex-direction: column;
+            
+
+            .photonews {
+                margin: 0;
+                text-align: center;
+            }
+
+            .docktoimg {
+                display: none;
+            }
+
+            .textnews {
+                margin: 0;
+                width: 80%;
+            
+                .seemore{
+                    margin: 0.5rem 0;
+                }
+                
+            }
+
+        }
+    }
+    
+    .newstitle {
+        text-align: center!important;
+        width: 100%;
+        margin: 0 0;
+    }
+}
+
+
+@media(max-width: 900px) {
+    .innercarousel{
+        
+        width: 90%;
+        h1{
+            width: 100%;
+            margin: 0rem;
+            font-size: 4rem;
+        }
+    }
+    
+    .container-carousel {
+        width: 100%;
+        height: 70vh;
+    }
+
+}
+
+
+@media (max-width: 400px) {
+
+    .container-carousel {
+        width: 100%;
+        height: 40vh;
+    }
+    .innercarousel{
+        
+        width: 90%;
+        h1{
+            width: 100%;
+            margin: 0rem;
+            font-size: 2.5rem;
+        }
+    }
+
+        .container-carousel-right {
+            display: none;
+        }
 
 }
 
@@ -253,10 +401,14 @@ header {
     flex-direction: column;
     margin-top: 0.5rem;
 
+    a {
+        text-decoration: none;
+    }
+
     .head-latest {
         display: flex;
-        justify-content: center;
-        gap: 77%;
+        justify-content: space-between;
+        margin: 0 1rem;
 
         .title {
             font-size: 2rem;
@@ -270,8 +422,8 @@ header {
 
 
         .pic-news {
-            width: 45%;
             margin: 0.5rem 0;
+            max-width: 40rem;
         }
 
         .textblock {
@@ -279,28 +431,72 @@ header {
             display: flex;
             flex-direction: column;
             align-self: center;
-            width: 50%;
+            width: 100%;
             gap: 1rem;
 
             .date {
                 font-family: 'Marta';
+                color: black;
             }
 
             .titlenews {
                 font-size: 1.8rem;
                 font-family: 'Cruyff';
                 font-weight: bold;
-                width: 50%;
+                width: 100%;
+                color: black;
             }
+
+            .titlenews:hover {
+                color: #05f269;
+                transition: ease 0.1s;
+            }
+
 
             .resume {
                 font-family: 'Cruyff';
-                width: 50%;
+                width: 100%;
                 font-size: 1.1rem;
                 color: rgb(92, 92, 92);
             }
         }
     }
+}
+
+@media(max-width: 1200px) {
+
+    .news-body {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+
+        .pic-news {
+            width: 100%;
+            height: 100%;
+        }
+
+
+        .textblock {
+            text-align: center;
+            gap: 0rem;
+        }
+    }
+}
+
+
+@media(max-width: 900px) {
+
+
+    .textblock {
+        max-width: 80%;
+    }
+
+    .pic-news {
+        width: 100%;
+        height: 100%;
+    }
+
 }
 
 
@@ -309,11 +505,20 @@ header {
     background-color: transparent;
     font-family: 'Cruyff';
     font-size: 1rem;
+    cursor: pointer;
 
     i {
         margin-left: 0.5rem;
         padding: 0.4rem;
         background-color: #05f269;
-        border-radius: 100%;
+        border-radius: 20%;
+    }
+}
+
+.seemore:hover {
+    color: #05f269;
+
+    i {
+        color: black;
     }
 }
