@@ -31,14 +31,19 @@ header .topbar {
   align-items: center;
   margin: 0 3rem;
   height: 3rem;
+  gap: 2rem;
 }
 header .topbar i {
-  width: 3rem;
-  color: gray;
+  color: #808080;
 }
-header .topbar img {
-  width: 1rem;
-  filter: invert(100%);
+header .topbar i:hover {
+  transform: scale(1.2);
+  transition: ease 0.5s;
+}
+header .topbar .logoea {
+  content: url("/img/logoea2.svg");
+  width: 2.3rem;
+  margin-top: 0.3rem;
 }
 @media (max-width: 1200px) {
   header .topbar {
@@ -149,6 +154,7 @@ header .iconburger {
   border-radius: 3rem;
   font-size: 1.2rem;
   font-family: "Cruyff";
+  margin: 1rem 0;
 }
 .innercarousel a:hover {
   background-color: white;
@@ -283,7 +289,10 @@ header .iconburger {
     height: 70vh;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 600px) {
+  .container-carousel-right {
+    display: none;
+  }
   .container-carousel {
     width: 100%;
     height: 40vh;
@@ -295,9 +304,6 @@ header .iconburger {
     width: 100%;
     margin: 0rem;
     font-size: 2.5rem;
-  }
-  .container-carousel-right {
-    display: none;
   }
 }
 .container-latest-news {

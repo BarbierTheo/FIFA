@@ -40,106 +40,114 @@ header {
         align-items: center;
         margin: 0 3rem;
         height: 3rem;
+        gap: 2rem;
 
 
         i {
-            width: 3rem;
-            color: gray;
+            color: #808080;
         }
 
-        img {
-            width: 1rem;
-            -webkit-filter: invert(100%);
-            filter: invert(100%);
+        i:hover{
+            
+        transform: scale(1.2);
+        transition: ease 0.5s;
         }
 
+        .logoea {
+            content: url('/img/logoea2.svg');
+            width: 2.3rem;
+            margin-top: 0.3rem;
 
-    }
-
-    @media (max-width: 1200px) {
-        .topbar {
-            gap: 0rem;
-            margin: 0;
-            justify-content: center;
-            gap: 10%;
-        }
-    }
-
-    a,
-    button {
-        color: white;
-        text-decoration: none;
-        border: none;
-        background-color: transparent;
-        font-size: 1.2rem;
-        font-family: 'Cruyff';
-        padding: 0.7rem;
-    }
-
-    nav {
-        display: flex;
-        margin: 0 3rem;
-        width: 100%;
-        padding: 0.2rem;
-        gap: 2.3rem;
-        align-items: center;
-
-    }
-
-    .dropdown1 {
-        position: relative;
-
-        .content1 {
-            display: none;
-            background-color: #151616;
-        }
-
-        i {
-            margin: 0 0.5rem;
         }
 
     }
 
 
-    .dropdown1:hover .content1 {
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        gap: 1rem;
-        padding: 0.5rem 0.5rem;
 
-        a {
-            width: 15rem;
-        }
+@media (max-width: 1200px) {
+    .topbar {
+        gap: 0rem;
+        margin: 0;
+        justify-content: center;
+        gap: 10%;
+    }
+}
+
+a,
+button {
+    color: white;
+    text-decoration: none;
+    border: none;
+    background-color: transparent;
+    font-size: 1.2rem;
+    font-family: 'Cruyff';
+    padding: 0.7rem;
+}
+
+nav {
+    display: flex;
+    margin: 0 3rem;
+    width: 100%;
+    padding: 0.2rem;
+    gap: 2.3rem;
+    align-items: center;
+
+}
+
+.dropdown1 {
+    position: relative;
+
+    .content1 {
+        display: none;
+        background-color: #151616;
     }
 
-    .hover1:hover {
-        color: #05f269;
-        transition: ease 0.3s;
-
+    i {
+        margin: 0 0.5rem;
     }
 
+}
 
-    .iconburger {
+
+.dropdown1:hover .content1 {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    gap: 1rem;
+    padding: 0.5rem 0.5rem;
+
+    a {
+        width: 15rem;
+    }
+}
+
+.hover1:hover {
+    color: #05f269;
+    transition: ease 0.3s;
+
+}
+
+
+.iconburger {
+    display: none;
+}
+
+@media (max-width: 1200px) {
+    .hover1 {
         display: none;
     }
 
-    @media (max-width: 1200px) {
-        .hover1 {
-            display: none;
-        }
-
-        .iconburger {
-            display: inline-block;
-        }
-
-        nav {
-            justify-content: center;
-            margin: 0 0;
-            gap: 0rem;
-        }
-
+    .iconburger {
+        display: inline-block;
     }
+
+    nav {
+        justify-content: center;
+        margin: 0 0;
+        gap: 0rem;
+    }
+
+}
 }
 
 
@@ -191,6 +199,7 @@ header {
         border-radius: 3rem;
         font-size: 1.2rem;
         font-family: 'Cruyff';
+        margin: 1rem 0;
     }
 
     a:hover {
@@ -315,10 +324,10 @@ header {
         gap: 0rem;
 
 
-        
+
         .news {
             flex-direction: column;
-            
+
 
             .photonews {
                 margin: 0;
@@ -332,18 +341,18 @@ header {
             .textnews {
                 margin: 0;
                 width: 80%;
-            
-                .seemore{
+
+                .seemore {
                     margin: 0.5rem 0;
                 }
-                
+
             }
 
         }
     }
-    
+
     .newstitle {
-        text-align: center!important;
+        text-align: center !important;
         width: 100%;
         margin: 0 0;
     }
@@ -351,16 +360,17 @@ header {
 
 
 @media(max-width: 900px) {
-    .innercarousel{
-        
+    .innercarousel {
+
         width: 90%;
-        h1{
+
+        h1 {
             width: 100%;
             margin: 0rem;
             font-size: 4rem;
         }
     }
-    
+
     .container-carousel {
         width: 100%;
         height: 70vh;
@@ -368,26 +378,28 @@ header {
 
 }
 
+@media (max-width: 600px) {
 
-@media (max-width: 400px) {
 
+    .container-carousel-right {
+        display: none;
+    }
+    
     .container-carousel {
         width: 100%;
         height: 40vh;
     }
-    .innercarousel{
-        
+
+    .innercarousel {
+
         width: 90%;
-        h1{
+
+        h1 {
             width: 100%;
             margin: 0rem;
             font-size: 2.5rem;
         }
     }
-
-        .container-carousel-right {
-            display: none;
-        }
 
 }
 
