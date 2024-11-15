@@ -41,8 +41,7 @@ header .topbar i:hover {
   transition: ease 0.5s;
 }
 header .topbar .logoea {
-  content: url("/img/logoea2.svg");
-  width: 2.3rem;
+  width: 2rem;
   margin-top: 0.3rem;
 }
 @media (max-width: 1200px) {
@@ -70,6 +69,16 @@ header nav {
   padding: 0.2rem;
   gap: 2.3rem;
   align-items: center;
+}
+header nav a,
+header nav button {
+  color: white;
+  text-decoration: none;
+  border: none;
+  background-color: transparent;
+  font-size: 1.2rem;
+  font-family: "Cruyff";
+  padding: 0.7rem;
 }
 header .dropdown1 {
   position: relative;
@@ -99,17 +108,34 @@ header .iconburger {
   display: none;
 }
 @media (max-width: 1200px) {
+  header .dropdown1,
   header .hover1 {
     display: none;
   }
   header .iconburger {
     display: inline-block;
+    cursor: pointer;
   }
   header nav {
     justify-content: center;
     margin: 0 0;
     gap: 0rem;
+    flex-direction: column;
   }
+  header .mobile {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.responsive nav {
+  flex-direction: column;
+}
+.responsive .hover1 {
+  display: block;
+}
+.responsive .dropdown1 {
+  display: block;
 }
 
 .container-carousel {

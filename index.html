@@ -15,14 +15,15 @@
 <body>
     <header>
         <div class="topbar">
-            <a href="#" #profile><i class="fa-regular fa-user"></i></a>
-            <a href="#" #faq><i class="fa-solid fa-question"></i></a>
-            <a href="#" #ea><i  class="logoea"></i>
+            <a href="#"><i class="fa-regular fa-user"></i></a>
+            <a href="#"><i class="fa-solid fa-question"></i></a>
+            <a href="#"><img src="./img/logoea2.svg" alt="logo-ea" class="logoea">
             </a>
         </div>
-        <nav>
-            <a class="iconburger">&#9776</a>
-            <a href="#"><img src="./img/FC-logo.webp" alt="logo_FC_pro"></a>
+        <nav id="navbar">
+            <div class="mobile">
+            <a class="iconburger" onclick="dropdownnav()">&#9776;</a>
+            <a href="#"><img src="./img/FC-logo.webp" alt="logo_FC_pro"></a></div>
             <div class="dropdown1">
                 <button class="hover1">Competitions <i class="fa-solid fa-chevron-down"></i></button>
                 <div class="content1">
@@ -46,6 +47,18 @@
             </div>
         </nav>
     </header>
+
+<script>
+        function dropdownnav() {
+            var x = document.getElementById("navbar");
+            if (x.className === "nav ") {
+                x.className += "responsive";
+            } else {
+                x.className = "nav ";
+            }
+        }
+</script>
+
     <main>
         <div class="container-carousel">
             <div class="innercarousel">
@@ -126,6 +139,7 @@
             </a>
         </div>
     </main>
+
 </body>
 
 </html>
