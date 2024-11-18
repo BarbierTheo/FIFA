@@ -65,8 +65,8 @@ header button {
 header nav {
   display: flex;
   margin: 0 3rem;
-  width: 100%;
-  padding: 0.2rem;
+  width: 90%;
+  padding: 0 0.2rem;
   gap: 2.3rem;
   align-items: center;
 }
@@ -118,6 +118,7 @@ header .iconburger {
   }
   header nav {
     justify-content: center;
+    align-items: center;
     margin: 0 0;
     gap: 0rem;
     flex-direction: column;
